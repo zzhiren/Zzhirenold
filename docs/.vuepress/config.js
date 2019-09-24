@@ -1,6 +1,6 @@
 module.exports = {
-  title: '开发日记', 
-  description: '纸人的博客',
+  title: 'Web进化论', 
+  description: '纸人',
   head: [ // 注入到当前页面的 HTML <head> 中的标签
     ['link', { rel: 'icon', href: '/logo.png' }], // 增加一个自定义的 favicon(网页标签的图标)
   ],
@@ -10,21 +10,45 @@ module.exports = {
   },
   themeConfig: {
     nav:[ // 导航栏配置
-      // {text: '前端基础', link: '/README.md' },
-      // {text: 'HTML', link: '/HTML/README.md' },
-    ],
-    sidebar:[
       {
-        title: '',
-        collapsable: false,
-        children: [
-          '/'
+        text: '书籍',
+        items: [
+          {text: 'JavaScript高级程序设计', link: '/JavaScript高级程序设计/' },
         ]
       },
+      // {
+      //   text:'框架',
+      //   items: [
+      //     { text:'Vue.js', link: '/Vue/' },
+      //     { text:'Egg.js', link: '/Egg/' }
+      //   ]
+      // },
+      // {
+      //   text:'HTML&&CSS',
+      //   items: [
+      //     { text:'CSS', link: '/HTML&CSS/css/' },
+      //     { text:'SCSS', link: '/HTML&CSS/scss/' },
+      //     { text:'Stylus', link: '/HTML&CSS/stylus/' },
+      //   ]
+      // }
+    ],
+    sidebar:[
+      // {
+      //   title: '',
+      //   collapsable: false,
+      //   children: [
+      //     '/'
+      //   ]
+      // },
       {
-        title: 'Group 2',
+        title: '《JavaScript高级程序设计》',
+        collapsable: false,
         children: [ 
-          '/foo/'
+          '/JavaScript高级程序设计/Chapter01.md',
+          '/JavaScript高级程序设计/Chapter02.md',
+          '/JavaScript高级程序设计/Chapter03.md',
+          '/JavaScript高级程序设计/Chapter04.md',
+          '/JavaScript高级程序设计/Exercises.md',
         ]
       }
     ],
