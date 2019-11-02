@@ -1,5 +1,5 @@
 {
-  "name": "Zzhiren",
+  "name": "zzhiren",
   "version": "1.0.0",
   "description": "Zzhiren",
   "main": "index.js",
@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/Zzhiren/Zzhiren/issues"
   },
-  "homepage": "https://github.com/Zzhiren/Zzhiren#readme"
+  "homepage": "https://github.com/Zzhiren/Zzhiren#readme",
+  "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.0.0-rc.1",
+    "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
+    "@vuepress/plugin-nprogress": "^1.0.0-rc.1"
+  }
 }
