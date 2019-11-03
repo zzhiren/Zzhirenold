@@ -1,0 +1,98 @@
+$nav-sibe-bg = rgba(255,255,255,.8)
+html 
+  // background-color: $codebg
+  // transition background-color .1s linear,color .1s linear,border-color .1s linear,filter .1s linear,opacity .1s linear,visibility .1s linear,transform .1s linear,-webkit-filter .1s linear
+body
+//  color: black
+tr:nth-child(2n)
+  // background-color black
+h2
+ border-bottom 1px solid #3eaf7c
+button
+ &:focus
+  outline none
+.sidebar
+  border none
+  background-color $nav-sibe-bg 
+  // transition background-color .1s linear,color .1s linear,border-color .1s linear,filter .1s linear,opacity .1s linear,visibility .1s linear,transform .1s linear,-webkit-filter .1s linear
+.theme-container
+  background: url(/codewhite.png) left top;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  .navbar
+    backdrop-filter: blur(5px)
+    background-color $nav-sibe-bg 
+    border none
+    .site-name
+      color: white
+      font-weight: 600;
+      font-size: 28px;
+      font-family: "黑体";
+      color: #8c888b;
+      background: -webkit-linear-gradient(45deg, #2d85f0, #f4433c, #ffbc32, #2d85f0, #0aa858, #f4433c);
+      color: transparent;
+      /*设置字体颜色透明*/
+      -webkit-background-clip: text;
+      /*背景裁剪为文本形式*/
+      animation: ran 10s linear infinite;
+    .links
+      background-color: rgba(255,255,255,0)
+      .search-box
+        input
+          background: rgba(0,0,0,.1) url(/assets/img/search.83621669.svg) 0.6rem 0.5rem no-repeat
+          border: none;
+          &:focus
+            color: red
+    .sidebar-button
+      .home-link 
+        // color: #42b983
+  .page
+    height auto
+    min-height 100vh
+    backdrop-filter: blur(8px)
+    transition: background-color .1s linear,color .1s linear,border-color .1s linear,filter .1s linear,opacity .1s linear,visibility .1s linear,transform .1s linear,-webkit-filter .1s linear;
+    // background-color: rgba(255,255,255,.7)
+    // transition background-color .1s linear,color .1s linear,border-color .1s linear,filter .1s linear,opacity .1s linear,visibility .1s linear,transform .1s linear,-webkit-filter .1s linear
+  .nav-item
+    .title
+      // color white
+    .arrow
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 6px solid white;
+      border-bottom: 0;
+// markdown 
+.content__default
+  // background-color rgba(255,255,255,.7)
+  
+.content__default
+  max-width 100%!important
+.theme-default-content 
+  code
+    background-color rgba(0,0,0,.1)
+    color: rgba(0,0,0,.8)
+  blockquote
+    border-left 0.2rem solid $accentColor
+    background-color white
+    color: rgba(0,0,0,.8)
+th, td 
+  border: 1px solid black
+div[class*="language-"]::before {
+    color: #3eaf7c;
+    font-size 1rem
+}
+// 右上角下拉框背景色
+@media (min-width: 719px)
+  .nav-item
+    .dropdown-wrapper
+      .nav-dropdown
+        // background-color: $codebg
+        border: none
+@media (max-width: 719px)
+  .sidebar
+    backdrop-filter: blur(10px)
+    background-color: $nav-sibe-bg 
+    border none
+    // transition background-color .1s linear,color .1s linear,border-color .1s linear,filter .1s linear,opacity .1s linear,visibility .1s linear,transform .1s linear,-webkit-filter .1s linear
+
+

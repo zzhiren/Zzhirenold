@@ -1,0 +1,119 @@
+// colors
+
+$accentColor = #0088f5//默认主题颜色
+$textColor = rgba(255,255,255,.85)//默认字体颜色
+$borderColor = black//默认边框颜色
+// $borderColor = #eaecef//默认边框颜色
+$codeBgColor = #282c34//默认背景颜色
+$arrowBgColor = white
+// $arrowBgColor = #ccc
+$badgeTipColor = #42b983 //默认颜色
+$badgeWarningColor = darken(#ffe564, 35%)
+$badgeErrorColor = #DA5961
+
+// layout
+$navbarHeight = 3.6rem
+$sidebarWidth = 20rem
+$contentWidth = 740px
+
+// responsive breakpoints
+$MQNarrow = 959px
+$MQMobile = 719px
+$MQMobileNarrow = 419px
+
+// code
+$lineNumbersWrapperWidth = 3.5rem
+$codeLang = js ts html md vue css sass scss less stylus go java c sh yaml py docker dockerfile makefile
+
+$mainbg = rgba(0,0,0,.8)
+$codebg = rgba(0,0,0,.9)
+$pagebg = rgba(0,0,0,.85)
+
+.navbar 
+  background-color: rgba(0,0,0,0.6)
+  backdrop-filter: blur(5px)
+  .site-name
+    color: #42b983!important
+
+
+html 
+  background-color: $codebg
+  transition background-color .1s linear,color .1s linear,border-color .1s linear,filter .1s linear,opacity .1s linear,visibility .1s linear,transform .1s linear,-webkit-filter .1s linear
+body
+ color: white
+tr:nth-child(2n)
+  background-color black
+h2
+ border-bottom 1px solid white
+button
+ &:focus
+  outline none
+.sidebar
+  background-color: $mainbg
+  transition background-color .1s linear,color .1s linear,border-color .1s linear,filter .1s linear,opacity .1s linear,visibility .1s linear,transform .1s linear,-webkit-filter .1s linear
+.theme-container
+  background: url(/codewhite.png) left top;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  .navbar
+    background-color: $mainbg
+    backdrop-filter: blur(5px)
+    .site-name
+      color: white
+      font-weight: 600;
+      font-size: 28px;
+      font-family: "黑体";
+      color: #8c888b;
+      background: -webkit-linear-gradient(45deg, #70f7fe, #fbd7c6, #fdefac, #bfb5dd, #bed5f5);
+      -moz-linear-gradient(45deg, #70f7fe, #fbd7c6, #fdefac, #bfb5dd, #bed5f5);
+      -ms-linear-gradient(45deg, #70f7fe, #fbd7c6, #fdefac, #bfb5dd, #bed5f5);
+      color: transparent;
+      /*设置字体颜色透明*/
+      -webkit-background-clip: text;
+      /*背景裁剪为文本形式*/
+      animation: ran 10s linear infinite;
+    .links
+      background-color: rgba(255,255,255,0)
+      .search-box
+        input
+          background: rgba(0,0,0,.4) url(/assets/img/search.83621669.svg) 0.6rem 0.5rem no-repeat
+          border: none;
+    .sidebar-button
+      .home-link 
+        color: #42b983
+  .page
+    height 100%
+    backdrop-filter: blur(5px)
+    background-color: $pagebg
+    transition background-color .1s linear,color .1s linear,border-color .1s linear,filter .1s linear,opacity .1s linear,visibility .1s linear,transform .1s linear,-webkit-filter .1s linear
+  .nav-item
+    .title
+      color white
+    .arrow
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 6px solid white;
+      border-bottom: 0;
+// markdown 
+.theme-default-content
+  code
+    background-color #3B3B3B
+  blockquote
+    border-left 0.2rem solid $accentColor
+    background-color black
+th, td 
+  border: 1px solid black
+// 右上角下拉框背景色
+@media (min-width: 719px)
+  .nav-item
+    .dropdown-wrapper
+      .nav-dropdown
+        background-color: $codebg
+        border: none
+@media (max-width: 719px)
+  .sidebar
+    backdrop-filter: blur(10px)
+    background-color: $mainbg
+    transition background-color .1s linear,color .1s linear,border-color .1s linear,filter .1s linear,opacity .1s linear,visibility .1s linear,transform .1s linear,-webkit-filter .1s linear
+
+
