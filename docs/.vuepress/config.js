@@ -40,11 +40,11 @@ module.exports = {
     sidebar: {
       '/JavaScript高级程序设计/':[
         '',
-        '第1章JavaScript简介',
-        '第2章在HTML中使用JavaScript',
-        '第3章基本概念',
-        '第4章变量、作用域和内存问题',
-        '第5章引用类型',
+        '第1章 JavaScript简介',
+        '第2章 在HTML中使用JavaScript',
+        '第3章 基本概念',
+        '第4章 变量、作用域和内存问题',
+        '第5章 引用类型',
         '练习题'
         // {
         //   title: '第1章 JavaScript简介',
@@ -99,7 +99,7 @@ module.exports = {
     //   ]
     // },
     sidebarDepth: 8, // 侧边栏显示2级
-    displayAllHeaders: true // 默认值：false
+    displayAllHeaders: false // 默认值：false
   },
   plugins: [
     '@vuepress/active-header-links',
