@@ -39,33 +39,18 @@ module.exports = {
     ],
     sidebar: {
       '/JavaScript高级程序设计/':[
-        '',
-        '第1章 JavaScript简介',
-        '第2章 在HTML中使用JavaScript',
-        '第3章 基本概念',
-        '第4章 变量、作用域和内存问题',
-        '第5章 引用类型',
-        '练习题'
-        // {
-        //   title: '第1章 JavaScript简介',
-        //   path: '第1章JavaScript简介',
-        //   collapsable: true, // 可选的, 默认值是 true,
-        // },
-        // {
-        //   title: '第2章 在HTML中使用JavaScript',
-        //   path:'第2章在HTML中使用JavaScript',
-        //   collapsable: true, // 可选的, 默认值是 true,
-        // },
-        // {
-        //   title: '第3章 基本概念',
-        //   path:'第3章基本概念',
-        //   collapsable: true, // 可选的, 默认值是 true,
-        // },
-        // {
-        //   title: '第4章 变量、作用域和内存问题',
-        //   path: '第4章变量、作用域和内存问题',
-        //   collapsable: true
-        // }
+        {
+          title: 'JavaScript高级程序设计',
+          children: [
+            '',
+            '第1章 JavaScript简介',
+            '第2章 在HTML中使用JavaScript',
+            '第3章 基本概念',
+            '第4章 变量、作用域和内存问题',
+            '第5章 引用类型',
+            '练习题'
+          ]
+        }
       ],
       '/深入浅出Nodejs/':[
         ''
@@ -75,6 +60,15 @@ module.exports = {
           title: 'Egg.js',
           children: [
             'Egg'
+          ]
+        }
+      ],
+      '/Vue/':[
+        {
+          title: 'Vue.js',
+          children: [
+            '',
+            'vue-cli3.0 配置'
           ]
         }
       ],
